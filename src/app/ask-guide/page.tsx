@@ -45,8 +45,20 @@ function renderMarkdown(text: string): React.ReactNode {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     const isBullet = /^[-•]\s/.test(line);
+    const headerMatch = /^(#{1,4})\s+(.*)$/.exec(line);
 
-    if (isBullet) {
+    if (headerMatch) {
+      if (inList) flushList();
+      const level = headerMatch[1].length;
+      const text = headerMatch[2];
+      const sizeClass =
+        level <= 2 ? 'text-base font-semibold' : 'text-sm font-semibold';
+      elements.push(
+        <p key={keyCounter++} className={`${sizeClass} mt-3 mb-1 text-ink`}>
+          {renderInline(text)}
+        </p>
+      );
+    } else if (isBullet) {
       inList = true;
       listItems.push(
         <li key={keyCounter++} className="flex gap-2">
