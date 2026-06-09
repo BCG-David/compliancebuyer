@@ -1,0 +1,372 @@
+---
+title: 'Fire Alarms — Practitioner Reference'
+description: 'BS 5839-1:2017+A2:2023 framework, category selection (L1-L5, P1-P2, M), the design-installation-commissioning-maintenance regime, UAS reduction methodology, integration with fire safety strategy, and the records that support defensibility. Written for fire safety practitioners, system designers, and those advising clients.'
+lastUpdated: '2026-06-23'
+audience: 'professional'
+faqs:
+  - question: 'What is the current edition of BS 5839-1?'
+    answer: 'BS 5839-1:2017 incorporating Amendment 2:2023 — Fire detection and fire alarm systems for buildings. Code of practice for design, installation, commissioning and maintenance of systems in non-domestic premises. Amendment 2 was published in 2023; practitioners should monitor for further revisions.'
+  - question: 'How are L-category systems determined?'
+    answer: 'Category determination flows from the fire risk assessment, the building''s fire safety strategy, the occupancy and evacuation profile, and the specific risks identified. BS 5839-1 Clause 5 provides the framework. The general principle: L1 maximises early warning throughout the building; lower categories (L2, L3, L4, L5) progressively reduce automatic detection in line with lower assessed risk. The right category is the one matching the building''s actual fire safety needs, not the highest available or the cheapest.'
+  - question: 'What is the BS 5839-1 framework for unwanted alarm signals (UAS)?'
+    answer: 'BS 5839-1 Clause 35 covers UAS reduction. The framework: monitor UAS through documented investigation; identify root causes (detector type, positioning, environment, system design, management); implement targeted controls. The standard expects a UAS rate target appropriate to the system category; sustained high UAS rates indicate a system not fit for purpose and require root cause intervention.'
+  - question: 'When is a voice alarm required rather than a sounder system?'
+    answer: 'BS 5839-1 Clause 17 covers sounder design. Voice alarm (under BS 5839-8) is required where: the building''s occupancy includes significant numbers of people unfamiliar with the premises (large retail, transport interchanges, large public assembly); evacuation requires specific instructions (phased evacuation, stay-put strategies); the fire strategy involves message-driven response. For simple commercial premises, conventional sounders are typically adequate.'
+---
+
+This reference provides practitioner-level depth on UK fire alarm systems — the BS 5839-1 framework, category selection, design and installation principles, commissioning requirements, the testing and maintenance regime, UAS reduction, and integration with the wider fire safety strategy. The layman version is at [/fire-alarms](/fire-alarms).
+
+## 1. Legal framework
+
+Fire alarm and detection duties in the UK rest on:
+
+- **The Regulatory Reform (Fire Safety) Order 2005 (RRO)** — for non-domestic premises and common parts of residential buildings in England and Wales. Article 13 requires the Responsible Person to provide such fire detection and warning as may be needed; Article 17 requires the equipment to be maintained.
+- **The Fire Safety Act 2021** — clarified RRO scope to include structure, external walls, and flat entrance doors for buildings with two or more sets of domestic premises.
+- **The Fire Safety (England) Regulations 2022** — additional duties on Responsible Persons of multi-occupied residential buildings 11m+ in height.
+- **The Building Safety Act 2022** — for Higher-Risk Buildings (residential, 18m+ or 7+ storeys, 2+ residential units), Accountable Person duties including the safety case.
+- **The Fire (Scotland) Act 2005** and **Fire Safety (Scotland) Regulations 2006** — equivalent provisions in Scotland.
+- **The Fire and Rescue Services (Northern Ireland) Order 2006** — equivalent provisions in Northern Ireland.
+- **The Building Regulations 2010** — Approved Document B specifies fire detection requirements in new construction and significant refurbishment.
+
+The Building Regulations route the requirement through building consent; the RRO route maintains it in operational use. Together they create the continuous compliance obligation from construction through occupation.
+
+## 2. Operative technical standards
+
+UK fire alarm practice rests on:
+
+- **BS 5839-1:2017+A2:2023** — Fire detection and fire alarm systems for buildings. Code of practice for design, installation, commissioning and maintenance of systems in non-domestic premises. The principal standard.
+- **BS 5839-6:2019** — Code of practice for design, installation, commissioning and maintenance of fire detection and fire alarm systems in domestic premises (single dwellings and certain residential applications).
+- **BS 5839-8:2013** — Code of practice for the design, installation, commissioning and maintenance of voice alarm systems.
+- **BS 5839-9** — Code of practice for the design, installation, commissioning and maintenance of emergency voice communication systems.
+- **BS EN 54 series** — European standards for fire detection and alarm system components (detectors, sounders, call points, control equipment).
+
+Compliance with BS 5839-1 is the recognised method of demonstrating that fire detection and alarm provision is suitable under RRO Article 13. Departure from BS 5839-1 without good reason is hard to defend.
+
+## 3. System categories — BS 5839-1 framework
+
+BS 5839-1 Clause 5 sets out the category framework. The categories divide into life safety (L), property protection (P), and manual (M).
+
+### 3.1 Category L (Life safety)
+
+**L1** — Automatic detection throughout the building, including escape routes, all rooms, and roof voids. Maximum early warning.
+
+Application: care homes, hospitals, large hotels, sleeping accommodation with vulnerable users, premises where evacuation is complex, premises where the fire risk assessment justifies maximum coverage.
+
+**L2** — As L3, plus automatic detection in specified high-risk rooms.
+
+Application: hotels, larger commercial premises with kitchens or store rooms requiring specific protection, HMOs where additional risks beyond escape routes warrant detection.
+
+**L3** — Automatic detection in escape routes and rooms opening onto escape routes.
+
+Application: the default for many medium-sized commercial buildings — offices, retail, hospitality where the FRA does not identify additional high-risk areas requiring specific cover.
+
+**L4** — Automatic detection in escape routes only.
+
+Application: smaller commercial buildings with simple escape strategies, where detection in escape routes is sufficient to give warning before escape is compromised.
+
+**L5** — Bespoke automatic detection to address specific risks.
+
+Application: typically used in addition to another category to address a specific risk not covered by the standard category (e.g., a high-risk storage area within an otherwise L4 building). L5 alone is not a complete life safety system.
+
+### 3.2 Category P (Property protection)
+
+**P1** — Automatic detection throughout the building for property protection.
+
+**P2** — Automatic detection in defined high-risk areas for property protection.
+
+P categories are typically required by insurers, not by fire safety legislation. They can be combined with L categories (e.g., L2/P1 for a commercial building with an L2 life safety provision and additional P1 detection for property reasons).
+
+### 3.3 Category M (Manual)
+
+Manual call points only, no automatic detection. Permitted only where the fire risk assessment confirms that occupants will be aware of fire conditions in time to operate a call point.
+
+Application: small simple occupied premises where occupants are present throughout, fire is unlikely to develop unobserved, and escape is rapid. Category M is rarely the right answer for modern commercial premises.
+
+### 3.4 Category determination
+
+Category determination should be driven by:
+
+- The fire risk assessment
+- The building's fire safety strategy
+- Occupancy profile and evacuation requirements
+- Identified high-risk areas
+- Sleeping risk where applicable
+- Vulnerable occupants where applicable
+- Insurance requirements (which may require P category in addition to L)
+
+A common deficiency is category determination by tradition or by installer default rather than by FRA-driven analysis. The category should be specified in the design certificate and visible to the duty holder.
+
+Where category requirements change during the building's life (change of use, increase in occupancy, introduction of sleeping risk, new high-risk areas) the system may require upgrade. A common compliance gap is system category remaining static while building use has evolved beyond the original specification.
+
+## 4. Design principles — BS 5839-1 Clauses 8-23
+
+The design phase establishes:
+
+**Zoning (Clause 13)** — division of the system into zones for fault identification and incident response. Typical zone size 2,000m² maximum, or one floor (whichever is smaller). Single zone limit 300m² in higher-risk premises.
+
+**Detector type selection (Clause 14)** — smoke detectors (ionisation, optical, beam), heat detectors (fixed temperature, rate of rise), multi-sensor (combining detection principles), aspirating systems (continuous air sampling), flame detectors.
+
+Selection should match the environment:
+
+- Smoke detectors — general escape routes and occupied spaces; not in kitchens (false alarm risk), not in dusty/steamy environments
+- Heat detectors — kitchens, plant rooms, garages, environments where smoke detectors would false alarm
+- Multi-sensor — versatile in mixed environments; reduces false alarms by requiring multiple confirmation criteria
+- Aspirating — telecoms equipment rooms, IT rooms, very early warning applications
+- Flame detectors — open flame risks where smoke is unreliable (large process areas, outdoors)
+
+**Manual call point provision (Clause 20)** — call points sited at exits from each floor, at the entrance to each stairway, at any final exit, and at additional points to ensure no escape route exceeds 45m to the nearest call point.
+
+**Sounder coverage (Clause 17)** — sounders sited to achieve audibility throughout the building. BS 5839-1 specifies a minimum sound pressure level of 65 dB(A) in occupied spaces, 75 dB(A) at the bedhead in sleeping accommodation, and at least 5 dB(A) above any ambient noise. Where ambient noise is consistently high, visual alarm devices (VADs) supplement sounders.
+
+**Power supplies (Clause 25)** — primary mains supply with secondary battery backup. The battery must sustain the system in quiescent state for 24 hours, then operate the alarm for 30 minutes; or 72 hours quiescent then 30 minutes alarm where the system is more critical.
+
+**Cabling (Clause 26)** — fire-resistant cabling rated for the duration of expected fire exposure. PH30 (30-minute fire resistance) is the baseline; PH60 (60-minute) or PH120 (120-minute) for higher-rated installations.
+
+## 5. Detection technology specifics
+
+**Optical (photoelectric) smoke detectors** — sense smoke by light scatter. Effective for smouldering fires that produce visible smoke before flame. The standard choice for most commercial environments.
+
+**Ionisation smoke detectors** — sense smoke by ionisation chamber. Faster response to fast-flaming fires. Largely superseded by optical and multi-sensor in modern installations.
+
+**Beam smoke detectors** — projected beam over distance (5-100m typical). Suitable for large open volumes (atria, warehouses, sports halls) where point detectors are impractical.
+
+**Heat detectors — fixed temperature** — activate at a defined temperature (typically 60°C, 75°C, or 90°C). Suitable for environments where smoke detection would false alarm.
+
+**Heat detectors — rate of rise** — activate on rapid temperature increase. Detect fires earlier than fixed-temperature in environments where ambient temperature is variable.
+
+**Multi-sensor detectors** — combine smoke, heat, and sometimes CO sensing. Algorithm-based response reduces false alarms while maintaining sensitivity to genuine fires. Increasingly the standard choice for commercial environments.
+
+**Aspirating smoke detectors** — sample air continuously from sampling points through a pipe network to a central detection chamber. Very early warning applications — telecoms, IT, valuable assets, very large volumes.
+
+**Flame detectors (UV/IR)** — optical detection of flame radiation. Specialist application for open flame risks.
+
+**Linear heat detection** — temperature-sensitive cable. Applications: cable trays, tunnels, conveyor systems, environments where point detectors are impractical.
+
+## 6. Manual call points
+
+BS 5839-1 Clause 20 specifies manual call point provision:
+
+- At every exit from a floor to a stairway
+- At every final exit from the building
+- At additional positions to ensure no point on an escape route is more than 45m from a call point (or 25m in higher-risk premises)
+- Mounted at 1.4m above floor level (with adjustment for accessibility where required)
+- Coloured red, with white or transparent operating element
+
+Call points should be Type A (single-action — operate by pushing the element) under BS EN 54-11. Type B (two-action) was previously permitted in environments where false operation was a concern but is now rarely specified.
+
+## 7. Commissioning — BS 5839-1 Clause 32
+
+Commissioning establishes that the system performs to design. The commissioning process:
+
+**Pre-commissioning checks** — installation review, cable testing, device verification, panel configuration verification.
+
+**Commissioning tests** — every device tested, every zone tested, sounder coverage verified, power supply testing including battery autonomy verification, cause-and-effect verification for any integrated systems.
+
+**Commissioning certificate** — formal record of the commissioning, including category, design intent, devices installed, test results, and competent person identification.
+
+**Operational handover** — duty holder briefing, logbook provision, system documentation.
+
+The commissioning certificate establishes the baseline against which subsequent testing and modifications are measured. A system without a commissioning certificate cannot be confidently verified to operate as designed.
+
+## 8. Testing regime — BS 5839-1 Clauses 44-45
+
+The operational testing regime has two principal components:
+
+### 8.1 Weekly user testing (Clause 44)
+
+A weekly functional test confirming the system activates and the warning reaches occupants:
+
+- Activate a different manual call point each week (rotated systematically through all call points)
+- Confirm sounders activate in all expected areas
+- Confirm the panel registers the activation and identifies the correct zone
+- Reset the system
+- Record in the logbook
+
+The weekly test can be performed by a trained competent person from within the duty holder's organisation. Rotation through all call points over the cycle ensures comprehensive coverage of the input layer.
+
+### 8.2 Periodic professional servicing (Clause 45)
+
+BS 5839-1 specifies that servicing intervals should be no more than six months. Quarterly servicing is appropriate for higher-risk or complex installations.
+
+Service scope per visit:
+
+- Panel inspection — fault history review, battery condition, indicator operation
+- Detector function testing on a sample basis (typically 25% per visit, ensuring 100% over four visits)
+- Call point testing on a sample basis
+- Sounder and VAD verification
+- Zone testing — confirming each zone activates correctly
+- Cabling inspection where accessible
+- Power supply testing including battery capacity
+- Cause-and-effect testing for integrated systems
+- Review of fault history since last visit
+- Updated service certificate
+
+The competent person performing servicing should hold BAFE SP203 / SP203-1 certification or equivalent, with appropriate training in BS 5839-1.
+
+## 9. Unwanted Alarm Signals (UAS) — Clause 35
+
+BS 5839-1 Clause 35 addresses unwanted alarm signals. The framework recognises that UAS:
+
+- Reduce occupant confidence in the alarm
+- Reduce evacuation effectiveness over time
+- Strain fire and rescue service resources
+- May lead to inappropriate management responses (silencing, isolation)
+
+UAS reduction process:
+
+**Monitoring** — every UAS investigated and recorded with cause analysis.
+
+**Root cause identification** — causes classified by category: detector type/positioning, environmental conditions, system design, equipment fault, user error, deliberate misuse.
+
+**Targeted intervention** — appropriate to the cause:
+
+- Detector positioning issues — relocation, type change
+- Environmental issues — engineering controls, environmental modification, detector type change
+- Equipment faults — replacement, service intervention
+- User issues — training, signage, management protocols
+
+**Target rates** — BS 5839-1 expects systems to achieve low UAS rates. Specific targets depend on system size and category, but sustained high rates indicate a system requiring intervention.
+
+A common deficiency is repeated UAS without root cause investigation, with isolation or silencing as the operational response. This is not BS 5839-1 compliant and creates compounding risk over time.
+
+## 10. False alarm reduction strategies
+
+Specific strategies for UAS reduction in commercial environments:
+
+**Detector selection** — multi-sensor in mixed environments; heat detectors near kitchens; environmental sealing for dusty areas; appropriate sensitivity settings.
+
+**Engineering controls** — environmental modifications to reduce false alarm triggers (steam containment near kitchens, air movement controls, smoke sealing).
+
+**Filtering and verification** — algorithmic verification at the panel level (requiring confirmation from a second device, or sustained activation, before alarm); time-of-day sensitivity adjustment.
+
+**Pre-alarm and investigation periods** — staff investigation period before full alarm activation in defined circumstances; permitted in hotels and some other building types under specific protocols.
+
+**Management protocols** — clear procedures for staff response to apparent false alarms; investigation rather than silencing; documented investigation outcomes.
+
+The fire and rescue service attendance policy (Section 13 below) creates strong commercial incentive for UAS reduction; sustained false alarm patterns can result in chargeable attendances or non-attendance regimes.
+
+## 11. System integration
+
+Modern fire alarm systems frequently integrate with:
+
+- **Door access control** — magnetic locks releasing on alarm to permit free egress
+- **Magnetic door holders** — releasing on alarm to close compartment doors
+- **Smoke control** — activating extract or pressurisation
+- **Lifts** — homing to ground floor and disabling on alarm
+- **Sprinkler systems** — flow switch monitoring and integrated alarm response
+- **Gas shut-off** — closing gas supply to kitchens or plant rooms on alarm
+- **Building Management Systems** — for fault monitoring and integration
+- **Alarm Receiving Centres** — for off-site monitoring under BS 5979
+
+Integration commissioning under Clause 32 must verify cause-and-effect for every integration. Subsequent servicing under Clause 45 must include cause-and-effect testing for each integration.
+
+Common integration deficiencies:
+
+- Door release functional at commissioning but failed at audit due to maintenance lapse
+- Smoke vent dampers stuck or removed during building works
+- Lift homing not tested in routine service visits
+- Gas shut-off interlocks not tested
+
+The defensible position is documented cause-and-effect testing at every periodic service visit, with the test results retained alongside the alarm service certificate.
+
+## 12. Maintenance and replacement
+
+**Detector service life** — typical detector service life is 10 years. Detectors should be replaced or comprehensively serviced at 10-year intervals; some manufacturers specify shorter service life.
+
+**Battery service life** — typical panel battery service life 4-5 years. Replacement should be tracked and proactive, not reactive.
+
+**Panel obsolescence** — fire alarm panels typically have 15-25 year service lives, with parts obsolescence becoming a constraint earlier. Long-term planning for system replacement avoids compliance gaps.
+
+**Calibration drift** — analogue addressable detectors maintain compensation algorithms; these should be reviewed at periodic service. Where compensation reaches limits, individual detector replacement is required regardless of overall system age.
+
+## 13. Fire and Rescue Service attendance
+
+Many UK fire and rescue services have moved to call-challenge or non-attendance regimes for commercial alarm activations. The position varies by service but typical patterns include:
+
+- **Single activation challenge** — alarm activation triggers a call from FRS control to the premises before attendance is confirmed; non-response or confirmed false alarm halts attendance
+- **Confirmed fire only** — attendance only on confirmed fire (visible smoke, occupant 999 call, second activation, or confirmed by ARC monitoring)
+- **Selective attendance** — attendance based on premises type, time of day, or activation history
+- **Chargeable false alarms** — repeated false alarms may incur cost recovery
+
+Implications for system design and management:
+
+- The alarm system's primary purpose is occupant warning and evacuation initiation
+- Fire service attendance is a separate question depending on local FRS policy
+- Monitored systems (ARC connection under BS 5979) may receive different attendance protocols
+- High UAS rates can produce non-attendance designations that compromise the wider fire safety strategy
+
+Duty holders should confirm their local FRS policy and the attendance protocol applying to their premises. Where attendance is not automatic, alternative fire-fighting and incident response arrangements may be needed.
+
+## 14. Higher-Risk Buildings and BSA 2022
+
+For Higher-Risk Buildings (residential, 18m+ or 7+ storeys, 2+ residential units):
+
+- Fire alarm and detection forms part of the Building Safety Case
+- Accountable Person duties under BSA 2022 include ongoing assessment of building safety risks
+- The golden thread of information must include alarm system design, commissioning, modifications, and ongoing maintenance records
+- Mandatory occurrence reporting applies to specified system failures
+
+For non-HRB residential blocks 11m+, the Fire Safety (England) Regulations 2022 impose additional duties including the provision of secure information boxes containing details of the building's fire safety arrangements.
+
+## 15. Competence framework
+
+Persons working on fire alarm systems should be competent:
+
+**Designers:**
+- BS 5839-1 competence
+- BAFE SP203-1 design module certification
+- Specific category and integration experience
+
+**Installers:**
+- City & Guilds 2382 / 18th Edition certification
+- Fire alarm specific installation experience
+- BAFE SP203-1 installation module certification
+
+**Commissioning engineers:**
+- BAFE SP203-1 commissioning module certification
+- Documented commissioning experience for the system category
+
+**Service engineers:**
+- BAFE SP203-1 service module certification
+- Specific manufacturer training where required
+
+**Specifiers:**
+- Fire safety competent person
+- BS 5839-1 specific competence
+- IFE membership grades for senior specification roles
+
+BAFE SP203-1 is the principal third-party certification scheme; LPCB Approval is an alternative recognised in some commercial sectors.
+
+## 16. Common compliance deficiencies
+
+Patterns in audited installations:
+
+- Category not documented or unknown to the duty holder
+- Original specification no longer matches building use
+- Weekly tests recorded but not actually performed (or only one call point repeatedly tested)
+- Six-monthly service skipped or partial
+- Cause-and-effect testing absent for integrated systems
+- Battery and detector replacements not tracked against service life
+- UAS recurring without root cause investigation
+- Faults silenced or isolated indefinitely
+- Logbook held by contractor rather than duty holder
+- Multiple contractors over the years with no consolidated record
+- Modifications not certificated
+
+The remediation pattern is consistent: commission a competent BAFE SP203-1 contractor to perform a current condition survey, verify category against current building use, address deficiencies, and rebuild the records.
+
+## 17. Enforcement
+
+Fire alarm enforcement typically appears as a component of wider fire safety enforcement under the RRO 2005, the Fire Safety Act 2021, or the Building Safety Act 2022 for HRBs.
+
+Specific enforcement themes:
+
+- System category inadequate for current use (premises altered, occupancy increased, sleeping risk added)
+- Maintenance lapsed identifiable by absent service certificates and outdated logbook
+- Integration failures contributing to escape failure findings
+- UAS rates producing FRS non-attendance, compromising the wider fire safety strategy
+- Modifications carried out without certification, producing uncertified system extents
+
+Sentencing follows the RRO 2005 framework as amended. Recent post-Grenfell prosecutions have included substantial corporate fines and custodial sentences for individuals where fire alarm failures were among multiple compounding deficiencies.
+
+This pillar should be read alongside the layman version at [/fire-alarms](/fire-alarms) and the related professional pillars on [fire risk assessment](/fire-risk-assessment/professional), [emergency lighting](/emergency-lighting/professional), and [fire extinguishers](/fire-extinguishers/professional).

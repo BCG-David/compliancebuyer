@@ -1,0 +1,573 @@
+---
+title: 'PAT Testing — Practitioner Reference'
+description: 'EAWR 1989 framework, the IET Code of Practice for In-Service Inspection and Testing of Electrical Equipment (5th Edition), the three-tier inspection regime, Class I/II/III testing protocols, risk-based frequency determination, and the records that support defensibility. Written for electrical contractors, facilities professionals, and those advising clients.'
+lastUpdated: '2026-06-23'
+audience: 'professional'
+faqs:
+  - question: 'What is the current edition of the IET Code of Practice for PAT?'
+    answer: 'The IET Code of Practice for In-Service Inspection and Testing of Electrical Equipment, 5th Edition, published 2020. It supersedes the 4th Edition (2012). The 5th Edition reorganised the inspection framework, introduced clearer risk-based frequency determination, and aligned with BS 7671:2018+A1. Practitioners working on PAT regimes should be operating to the 5th Edition.'
+  - question: 'What qualifications are recognised for PAT testers?'
+    answer: 'The IET Code of Practice does not mandate a formal qualification but requires competence — the knowledge, skills, and equipment to carry out the work safely and reliably. The recognised competence routes: City & Guilds 2377 (In-Service Inspection and Testing of Electrical Equipment) is the principal qualification. Some sites use ECS (Electrotechnical Certification Scheme) PAT cards. For employed staff, documented in-house training to the IET CoP is acceptable.'
+  - question: 'When is testing not required at all?'
+    answer: 'The Code of Practice identifies specific contexts where formal testing is not warranted: new equipment in original packaging from reputable suppliers; equipment used in environments where user checks and formal visual inspections are reliably capturing faults; certain double-insulated portable equipment in light-duty use. The default of "annual combined inspection and test for everything" is not what the CoP requires.'
+  - question: 'How do Class I and Class II distinctions affect testing protocol?'
+    answer: 'Class I equipment relies on insulation plus an earth connection for safety; testing protocol requires earth continuity test (typical limit 0.1Ω plus cable resistance) plus insulation resistance. Class II equipment relies on double or reinforced insulation with no earth; earth continuity is not applicable and insulation resistance is the principal test (typical limit 7MΩ). Class III equipment operates at SELV; only the supply unit (transformer or charger) requires formal testing.'
+---
+
+This reference provides practitioner-level depth on UK PAT testing — the EAWR 1989 framework, the IET Code of Practice methodology, the three-tier inspection regime, Class I/II/III protocols, risk-based frequency determination, and the records regime. The layman version is at [/pat-testing](/pat-testing).
+
+## 1. Legal framework
+
+The duties:
+
+- **The Electricity at Work Regulations 1989 (EAWR)** — SI 1989/635. The operative regulations.
+- **The Health and Safety at Work etc. Act 1974 (HSWA)** — parent duty.
+- **The Provision and Use of Work Equipment Regulations 1998 (PUWER)** — equipment as work equipment.
+- **The Management of Health and Safety at Work Regulations 1999 (MHSWR)** — risk assessment.
+- **The Electrical Safety Standards in the Private Rented Sector (England) Regulations 2020** — for residential rentals (separate to the PAT regime).
+- **The Personal Protective Equipment at Work Regulations 1992** (as amended 2022) — for equipment as PPE.
+
+EAWR 1989 Regulation 4(2) is the operative provision:
+
+> "As may be necessary to prevent danger, all systems shall be maintained so as to prevent, so far as is reasonably practicable, such danger."
+
+The "systems" includes portable equipment. The "maintained" duty is functional; PAT testing is the recognised industry method of demonstrating that the functional duty is met.
+
+In Northern Ireland, the equivalent regulations are the Electricity at Work Regulations (Northern Ireland) 1991.
+
+## 2. The IET Code of Practice
+
+The IET Code of Practice for In-Service Inspection and Testing of Electrical Equipment is the operative industry standard. Current edition: 5th Edition, published 2020.
+
+### 2.1 The Code's status
+
+The Code is not a regulation. Compliance is not statutory. However:
+
+- The Code represents the practitioner consensus on competent practice
+- HSE and the enforcing authorities treat the Code as evidence of competent practice
+- Insurers typically require regimes operating to the Code
+- The Code is the reference against which competent person work is judged
+
+Departure from the Code without good reason is hard to defend.
+
+### 2.2 Code structure
+
+The 5th Edition covers:
+
+- The legal and standards framework
+- Equipment classification (Class I, II, III)
+- The three-tier inspection regime
+- Risk-based frequency determination
+- Testing protocols by equipment type
+- Records and labelling
+- Competence requirements
+- Specific guidance for common environments (offices, education, healthcare, construction, hire)
+
+## 3. The three-tier inspection regime
+
+The IET Code identifies three distinct inspection types that, together, constitute the in-service regime. Most lay understanding focuses only on the third.
+
+### 3.1 User checks
+
+The simplest and most frequent check. The user looks at the equipment before each use:
+
+- Cable damage (cuts, abrasion, fraying)
+- Plug damage (cracked casing, burnt pins, missing fuse cover)
+- Casing damage (cracks, missing parts)
+- Signs of overheating (discolouration, melting, smell)
+- Appropriate use for the equipment
+
+User checks:
+
+- Take seconds
+- Require no qualifications
+- Do not require test equipment
+- Are not formally recorded (records of training and induction are the documentary evidence)
+
+The value: catching damage between formal inspections — a cable that became frayed yesterday, a plug that cracked last week, signs of overheating that appeared in recent use. User checks are the most cost-effective single element of any PAT regime.
+
+### 3.2 Formal visual inspection
+
+A more structured visual inspection by a competent person:
+
+- Cable condition along its full length
+- Plug condition — cover, cord grip, fuse rating, pin condition
+- Casing condition
+- Indicator lamps, switches, controls
+- Signs of overheating, damage, contamination, unauthorised modification
+- Fitness for environment
+
+Formal visual inspection:
+
+- Does not require test equipment
+- Requires basic electrical competence (recognising fault conditions, understanding equipment use)
+- Identifies a high proportion of faults that the combined inspection and test would also identify
+- Should be recorded against the equipment inventory
+
+The Code emphasises formal visual inspection as a significant element of the regime. Many faults are identified at this stage without the time and cost of full electrical testing.
+
+### 3.3 Combined inspection and test
+
+The full inspection most commonly understood as PAT. Combines the formal visual inspection with electrical testing using a portable appliance tester.
+
+Tests typically include:
+
+- **Earth continuity** (Class I equipment) — verifies the earth connection from the appliance metal to the supply plug earth pin
+- **Insulation resistance** — verifies that insulation is intact
+- **Polarity check** — verifies correct connection (extension leads particularly)
+- **Functional test** — verifies the equipment operates
+- **Earth leakage** — verifies leakage current within acceptable limits
+- **Touch current** (Class II only) — verifies the equipment surface is at safe potential
+- **Lead polarity** (extension leads) — verifies wiring continuity
+
+The combined inspection and test is the most thorough check and produces the recognised PAT certificate. It is also the most time-consuming and the only inspection type requiring specific test equipment and specific qualifications.
+
+### 3.4 Why the three-tier structure matters
+
+A regime that focuses only on combined inspection and test:
+
+- Catches faults at the formal test interval only
+- Misses damage occurring between tests
+- Cannot scale to large equipment populations efficiently
+- Treats compliance as a periodic event rather than a continuous regime
+
+A regime operating all three tiers:
+
+- Catches most damage at user check (before use)
+- Catches the rest at formal visual inspection
+- Reserves combined inspection and test for the systematic electrical verification it is best at
+- Operates continuously rather than periodically
+
+The three-tier regime is the IET Code's structural insight, and the area where many commercial regimes fall short.
+
+## 4. Equipment classification
+
+UK portable equipment is classified by protection against electric shock:
+
+### 4.1 Class I
+
+Protection by basic insulation plus a protective earth connection. Identifiable by:
+
+- Three-core supply cable (line, neutral, earth)
+- Earth pin on the supply plug
+- Often metal casing
+- No specific identification symbol
+
+Testing protocol:
+
+- **Earth continuity** — must be within specified limit (typically 0.1Ω + cable resistance per IET Code)
+- **Insulation resistance** — typically 1MΩ minimum at 500V DC
+
+### 4.2 Class II
+
+Protection by double or reinforced insulation, no earth required. Identifiable by:
+
+- Two-core supply cable (line, neutral only)
+- The double-square symbol on the rating plate
+- Often plastic or fully insulated metal casing
+
+Testing protocol:
+
+- **Earth continuity** — not applicable (no earth)
+- **Insulation resistance** — typically 2MΩ minimum at 500V DC (some sources specify 7MΩ for double-insulated)
+- **Touch current** — may be tested to verify no leakage through insulation
+
+Applying earth continuity tests to Class II equipment produces meaningless readings; applying inappropriate test voltages can damage sensitive electronics.
+
+### 4.3 Class III
+
+Protection by supply at safety extra-low voltage (SELV), typically below 50V AC or 75V DC. Identifiable by:
+
+- Power supplied from a SELV source (transformer, battery, charger)
+- Three-diamond symbol (where labelled)
+- Common in low-voltage equipment, chargers, battery-powered tools
+
+Testing protocol:
+
+- The SELV equipment itself does not require electrical testing in the same form as Class I/II
+- The supply unit (transformer or charger) requires testing as Class I or Class II as appropriate
+- The Class III equipment is inspected visually
+
+### 4.4 IT and electronic equipment specifics
+
+Modern IT and electronic equipment frequently includes:
+
+- Switch-mode power supplies with high earth leakage currents
+- Sensitive electronics that may be damaged by inappropriate test voltages
+- Functional earthing (earth used for noise reduction) distinct from protective earthing
+
+Testing protocol adjustments:
+
+- Insulation resistance at 250V DC may be appropriate (rather than 500V DC) for sensitive equipment
+- Earth leakage limits adjusted for known high-leakage equipment (typically up to 3.5mA)
+- Manufacturer guidance for the specific equipment should be consulted
+
+The IET Code provides specific guidance for IT and electronic equipment.
+
+## 5. Risk-based frequency determination
+
+The IET Code 5th Edition provides risk-based frequency tables. The frequencies are not regulations but represent practitioner consensus.
+
+### 5.1 Frequency factors
+
+Frequency should reflect:
+
+- Equipment classification (Class I generally warrants more frequent inspection than Class II)
+- Use intensity (continuous vs occasional)
+- Environment (controlled office vs harsh industrial)
+- User profile (trained employees vs public)
+- Mobility (fixed location vs frequently moved)
+- Previous failure history
+
+### 5.2 IET Code frequency framework — typical intervals
+
+**Office and shop equipment (low-stress environment):**
+
+| Equipment type | User checks | Formal visual | Combined I&T |
+| --- | --- | --- | --- |
+| IT equipment, fixed | None | 24-48 months | None / 5 years |
+| IT equipment, portable | None | 12-24 months | 24-48 months |
+| Hand-held appliances (Class I) | Pre-use | 6-12 months | 12-24 months |
+| Hand-held appliances (Class II) | Pre-use | 12-24 months | 24-48 months |
+| Movable equipment | None | 12 months | 24 months |
+| Extension leads | Pre-use | 6 months | 12 months |
+
+**Public-use equipment (hotels, gyms, public buildings):**
+
+| Equipment type | User checks | Formal visual | Combined I&T |
+| --- | --- | --- | --- |
+| Hand-held appliances | Weekly/monthly | 6-12 months | 12 months |
+| Movable equipment | Weekly/monthly | 6-12 months | 12 months |
+| Cables and extension leads | Weekly | 3-6 months | 12 months |
+
+**Schools, restaurants, kitchens:**
+
+| Equipment type | User checks | Formal visual | Combined I&T |
+| --- | --- | --- | --- |
+| Kitchen appliances | Pre-use | 6 months | 12 months |
+| Cleaning equipment | Pre-use | 6 months | 12 months |
+| Hand-held tools | Pre-use | 6 months | 12 months |
+
+**Industrial environments and high-stress use:**
+
+| Equipment type | User checks | Formal visual | Combined I&T |
+| --- | --- | --- | --- |
+| Hand-held tools | Pre-use | 1-3 months | 6-12 months |
+| Movable plant | Pre-use | 1-3 months | 6-12 months |
+| Cables and extension leads | Pre-use | 1 month | 3 months |
+
+**Construction sites:**
+
+| Equipment type | User checks | Formal visual | Combined I&T |
+| --- | --- | --- | --- |
+| 110V tools | Pre-use | 1 month | 3 months |
+| 230V tools | Pre-use | Weekly | 1 month |
+| Cables | Pre-use | Weekly | 1 month |
+| Movable plant | Pre-use | 1 month | 3 months |
+
+**Hire equipment:**
+
+- Pre-use user check
+- Formal visual inspection before each hire
+- Combined I&T per manufacturer/hire company specification (typically 12 months)
+
+### 5.3 Adjusting frequencies
+
+The frequencies are starting points. Adjustments:
+
+**Reduce frequency** where:
+- Equipment is in low-stress environment with reliable user awareness
+- Equipment is robust Class II with proven track record
+- Recent inspections show consistently positive results
+- The risk assessment supports reduction
+
+**Increase frequency** where:
+- Equipment is in harsh environment or high-stress use
+- Equipment is used by public or untrained users
+- Recent inspections show emerging fault patterns
+- Equipment is approaching end of service life
+- Recent incidents or near-misses warrant additional verification
+
+The frequency determination should be documented as part of the risk assessment, not adopted by default.
+
+## 6. New equipment
+
+A common myth: new equipment must be PAT tested before first use.
+
+The IET Code position:
+
+- New equipment, supplied by reputable manufacturer, in original packaging, with CE / UKCA marking, is presumed safe for first use
+- A user-level visual check before first use is recommended
+- Formal visual inspection or combined inspection and test is not required at first use
+- Subsequent inspection follows the normal cycle
+
+The "PAT test before first use" service offered by some contractors provides testing that the Code does not require. Operators are not non-compliant for skipping it. Where it is offered, the value is essentially confirming damage in transit — which is a goods receipt function rather than a compliance function.
+
+## 7. Scope — what is in and what is out
+
+### 7.1 In scope
+
+- Anything plugged into the fixed installation via a 13A plug or industrial connector
+- Extension leads (often the most common fault point)
+- Multi-way adaptors and IEC distribution leads
+- IT chargers, laptop power supplies, monitor cables (often overlooked)
+- Portable hand tools
+- Hire equipment
+- Kitchen appliances
+- Personal equipment brought from home for work use (where permitted)
+
+### 7.2 Out of scope
+
+- Hardwired equipment (no plug) — covered by the EICR regime
+- Fixed installation itself — wiring, distribution boards, sockets
+- IT equipment connected by structured data cabling (covered separately)
+- Specialist medical, scientific, or industrial equipment with its own inspection regime
+- Equipment owned by employees and not used for work
+- Visitor equipment (e.g., guest laptops in hotels)
+
+### 7.3 Boundary cases
+
+**Plug-in light fittings.** Lampholders permanently connected by plug are in scope. Lampholders hardwired are out (EICR).
+
+**Multi-occupied buildings.** The duty extends to the equipment of the occupier of each space. Common-area equipment is the landlord's responsibility; tenant-area equipment is the tenant's.
+
+**Customer-brought equipment in public spaces.** Cafes, public access spaces where customers plug in personal devices. The duty is on the proprietor to provide a safe supply (EICR scope) and to control equipment that becomes a workplace issue, but not generally to inspect customer-brought devices.
+
+**Equipment moved between premises.** Where employees use equipment at home and in office, the equipment is in scope of the employer's regime. Hybrid work expands this category significantly.
+
+## 8. Testing protocols by test type
+
+### 8.1 Earth continuity (Class I only)
+
+Verifies the earth connection from accessible metal of the appliance to the earth pin of the supply plug.
+
+Test current: typically 1.5A nominal under IET Code. Higher current options (10A, 25A) available on some testers; higher current produces more reliable result for higher-resistance connections but takes longer and may damage some equipment.
+
+Pass criterion: typically 0.1Ω + cable resistance (where the cable resistance is calculated from cable specification). Specific limits per IET Code 5th Edition tables.
+
+Common failures:
+- Poor earth termination at the plug
+- Broken earth conductor within the cable
+- Loose earth screw at the appliance
+- Faulty earth bonding within the appliance
+
+### 8.2 Insulation resistance
+
+Verifies insulation between live conductors (line and neutral combined) and the earth.
+
+Test voltage: typically 500V DC for general equipment; 250V DC for sensitive electronics.
+
+Pass criterion: typically 1MΩ minimum (Class I) or 2-7MΩ minimum (Class II); manufacturer specification may set different limits for specific equipment.
+
+Common failures:
+- Moisture ingress producing reduced insulation
+- Insulation deterioration through age, heat, or mechanical damage
+- Internal damage producing partial short
+
+### 8.3 Polarity
+
+Verifies that live and neutral are correctly connected on extension leads and similar.
+
+Pass criterion: correct polarity (live to live, neutral to neutral) throughout the lead and at each socket.
+
+Common failures:
+- Reversed polarity at one socket of a multi-way lead
+- Lead manufactured incorrectly
+- Lead repaired or modified producing crossed connection
+
+### 8.4 Functional test
+
+Verifies the equipment operates. Limited scope — confirms operation, not safety performance.
+
+### 8.5 Earth leakage
+
+Verifies leakage current within acceptable limits.
+
+Test method: measure current flowing through the earth conductor during operation.
+
+Pass criterion: typically 0.75mA for portable equipment; up to 3.5mA for IT equipment with high-leakage power supplies.
+
+### 8.6 Test sequence
+
+The IET Code specifies the test sequence to avoid damaging equipment:
+
+1. Visual inspection first
+2. Earth continuity
+3. Insulation resistance
+4. Functional test
+5. Earth leakage (where required)
+
+Testing in wrong sequence can damage equipment — for example, applying insulation resistance test voltage before confirming earth continuity may stress components inappropriately.
+
+## 9. Labels and certificates
+
+### 9.1 Labels
+
+PAT testing labels (the small stickers showing the next test date) are widespread but not strictly required by the Code. Their value:
+
+- Operational confirmation that the equipment is in the regime
+- Immediate evidence for inspectors and insurers
+- Identification of equipment in regimes with mixed history
+
+Label content typically includes:
+
+- Pass / fail indication
+- Date of test
+- Next test due date
+- Tester ID or company
+
+### 9.2 Certificates
+
+The PAT certificate is the documentary output of the combined inspection and test. Format varies but should include:
+
+- Equipment identification (asset number, description, location)
+- Test date and tester ID
+- Tests performed and results
+- Pass/fail determination
+- Recommended retest interval
+
+### 9.3 The wider records
+
+Beyond the certificate, the records that support defensibility:
+
+- Equipment inventory
+- Risk assessment supporting frequency determination
+- Inspection schedule
+- Results of formal visual inspections
+- Combined I&T certificates
+- Failures and actions taken
+- Removal-from-service evidence
+- User check awareness in training records
+
+A logbook of certificates without supporting inventory and schedule is incomplete.
+
+## 10. Competence framework
+
+The IET Code requires competence proportionate to the work:
+
+### 10.1 User checks
+
+- Awareness embedded in induction
+- Basic understanding of what constitutes damage or fault
+- No formal qualification
+
+### 10.2 Formal visual inspection
+
+- Basic electrical safety awareness
+- Documented training to perform the inspection
+- Ability to recognise faults at the level expected by the Code
+
+### 10.3 Combined inspection and test
+
+The recognised competence routes:
+
+- **City & Guilds 2377** — In-Service Inspection and Testing of Electrical Equipment (the principal qualification)
+- **EAL Level 3** — Electrical Equipment Testing
+- **PASMA / IPAF** — Not specifically PAT but show wider competence in some sectors
+- **ECS PAT card** — Electrotechnical Certification Scheme PAT competence card
+- **Documented in-house training** to the IET CoP standard
+
+The qualifications include:
+- Test equipment use
+- Test protocol understanding
+- Result interpretation
+- Equipment classification
+- Recording requirements
+
+For employed testers, the IET CoP accepts documented in-house training as competence evidence. For external contractors, formal qualifications and current certification are typical.
+
+## 11. Test equipment
+
+PAT testers vary from basic pass/fail units to advanced data-logging models with manufacturer database integration.
+
+Test equipment considerations:
+
+- **Calibration** — testers should be calibrated annually (typical industry practice; manufacturer specification may vary)
+- **Calibration certificate** retained as part of the regime records
+- **Test current selection** — appropriate for the equipment type
+- **Data logging** — produces electronic records integrated with asset management systems
+
+Basic pass/fail testers are adequate for small simple inventories. Data-logging testers earn their cost on larger or distributed inventories where electronic records produce significant time savings.
+
+## 12. Records — the documentary regime
+
+Records that support defensibility:
+
+- Equipment inventory — current, accessible
+- Risk assessment supporting frequency determination
+- Inspection schedule
+- Formal visual inspection results
+- Combined inspection and test certificates
+- Failure and remedial action records
+- Removal-from-service records
+- User check awareness (induction records, refresher training)
+- Tester competence records
+- Test equipment calibration records
+
+Retention should be for the working life of the equipment plus a reasonable period — five years minimum, longer where any incident may be subject to claim or investigation.
+
+## 13. Specific environment considerations
+
+### 13.1 Construction sites
+
+Construction is the highest-stress PAT environment. The Code provides specific guidance:
+
+- 110V centre-tapped earth (CTE) supply is preferred for site tools
+- Tools at risk of damage during the working day require pre-use user checks
+- 110V tools: combined I&T at three-month intervals minimum
+- 230V tools (where used): more frequent inspection
+- Specific colour-coding (often by month) supports visual identification of current testing status
+
+### 13.2 Healthcare
+
+Medical electrical equipment is subject to specific standards (BS EN 62353 for in-service testing of medical electrical equipment) in addition to the PAT framework. Specialist competence is required.
+
+### 13.3 Hire equipment
+
+Hire companies typically operate their own internal PAT regime. The hirer should:
+
+- Receive documentation of recent inspection at hire collection
+- Verify the equipment is within current test interval
+- Apply local controls (typically formal visual inspection on receipt)
+
+### 13.4 IT equipment
+
+The IET Code 5th Edition specifically addresses IT equipment:
+
+- Higher earth leakage currents are normal for switch-mode supplies (up to 3.5mA per device)
+- Insulation testing at 250V DC may be preferred to 500V DC
+- Functional earth distinct from protective earth requires understanding
+- Equipment connected by structured cabling (no plug) is out of PAT scope
+
+## 14. Common compliance deficiencies
+
+Patterns in audited regimes:
+
+- Generic "annual PAT testing" without risk assessment of equipment and environment
+- High-stress equipment (construction, kitchens, hire) on same annual cycle as office equipment
+- New equipment tested unnecessarily while user checks absent
+- Combined inspection and test performed but formal visual element skipped
+- Class II equipment subjected to earth continuity testing (producing meaningless readings)
+- Failures recorded but no evidence of removal from service
+- Inventory absent — records show what was tested but not what should have been
+- Multiple contractors over the years with no consolidated picture
+- Personal equipment brought from home not in any regime
+- Charger and IT cable population entirely overlooked
+- Hybrid work equipment (home use) not addressed
+
+The remediation pattern: rebuild the inventory, set risk-based frequencies, document the regime, ensure failures are demonstrably removed from service.
+
+## 15. Enforcement
+
+PAT-related enforcement typically appears as a component of wider electrical safety enforcement under EAWR and HSWA. Standalone PAT prosecutions are rare; PAT failures more commonly contribute to broader electrical safety findings.
+
+Specific themes:
+
+- Construction sites with inadequate or absent regime
+- Hospitality and kitchen settings where equipment failure has contributed to fire
+- Hire equipment failures where the duty holder relied on the hire company without verification
+- Hospital and care settings where medical equipment testing was inadequate
+
+Sentencing follows the Sentencing Council Guideline for Health and Safety Offences. Standalone PAT prosecutions tend to be lower-tier; PAT failures contributing to fatality or serious injury follow the full sentencing framework.
+
+This pillar should be read alongside the layman version at [/pat-testing](/pat-testing) and the related professional pillars on [electrical testing](/electrical-testing/professional) and [workplace safety training](/workplace-safety-training/professional).

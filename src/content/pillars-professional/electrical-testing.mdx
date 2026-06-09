@@ -1,0 +1,359 @@
+---
+title: 'Electrical Testing — Practitioner Reference'
+description: 'BS 7671:2018+A2:2022 (Amendment 2) framework, EICR methodology, code classification with the C3 question, frequency determination under IET Guidance Note 3, thermal imaging applications, and the management regime that supports defensibility. Written for practitioners advising clients, commissioning EICRs, or reviewing electrical compliance.'
+lastUpdated: '2026-06-23'
+audience: 'professional'
+faqs:
+  - question: 'What is the current edition of BS 7671?'
+    answer: 'BS 7671:2018 incorporating Amendment 2:2022 — published March 2022, effective from September 2022. Commonly referred to as the 18th Edition Amendment 2. Amendment 3 is under consultation at the time of writing; practitioners should monitor IET publication.'
+  - function: 'What is the IET Guidance Note 3 frequency framework?'
+    answer: 'IET Guidance Note 3 provides recommended maximum periods between inspections by installation type, occupancy, and use. The frequencies are not statutory but represent the practitioner consensus; departure requires justification and should be recorded.'
+  - question: 'How should C3 codes be handled in practice?'
+    answer: 'C3 codes are "improvement recommended" and do not render an installation unsatisfactory. However, treating them as discretionary in the popular interpretation ("you don''t have to do anything") creates a defensibility gap. The professional position: each C3 is reviewed, a decision recorded (action, plan, accept with reasoning), and the documentary trail maintained. The unsatisfactory/satisfactory determination is technical; the C3 handling is risk management.'
+  - question: 'What is the role of thermal imaging within the EICR framework?'
+    answer: 'Thermal imaging is not within scope of BS 7671 inspection methodology. It is a separate diagnostic technique with significant value in identifying developing thermal faults (loose connections, imbalanced loads, overloaded circuits). Best practice integrates thermal imaging as a complement to the EICR — particularly for higher-load installations, premises where failure has high consequence, and aged installations.'
+---
+
+This reference provides practitioner-level depth on UK electrical compliance — the BS 7671 framework, EICR methodology, code interpretation, frequency determination, and the management regime that supports defensibility. The layman version is at [/electrical-testing](/electrical-testing).
+
+## 1. Legal framework
+
+UK electrical safety duties rest on:
+
+- **The Electricity at Work Regulations 1989 (EAWR)** — SI 1989/635. The operative regulations for electrical safety at work.
+- **The Health and Safety at Work etc. Act 1974 (HSWA)** — the parent duty under sections 2, 3, and 4.
+- **The Electrical Safety Standards in the Private Rented Sector (England) Regulations 2020** — SI 2020/312. The specific statutory five-yearly EICR requirement for residential rented properties in England.
+- **The Provision and Use of Work Equipment Regulations 1998 (PUWER)** — for electrical equipment as work equipment.
+- **The Management of Health and Safety at Work Regulations 1999** — for the risk assessment of electrical systems.
+
+EAWR 1989 Regulation 4(2) is the principal operative provision:
+
+> "As may be necessary to prevent danger, all systems shall be maintained so as to prevent, so far as is reasonably practicable, such danger."
+
+The "so far as is reasonably practicable" qualifier is the SFAIRP test under HSWA. It permits the risk-based selection of inspection intervals and remedial priorities, but it does not permit nil inspection on cost grounds where danger is foreseeable.
+
+In Northern Ireland, the equivalent regulation is the Electricity at Work Regulations (Northern Ireland) 1991.
+
+## 2. BS 7671 — the operative technical standard
+
+BS 7671:2018 incorporating Amendment 2:2022 (the 18th Edition Amendment 2) is the operative technical standard for electrical installations in the UK. Published by IET in conjunction with BSI, BS 7671 covers:
+
+- Design of electrical installations
+- Selection and erection of equipment
+- Inspection, testing, and verification
+- Periodic inspection requirements
+
+Compliance with BS 7671 is the recognised means of meeting EAWR Regulation 4. Departure from BS 7671 without good reason is hard to defend in any enforcement or civil context.
+
+Amendment 2 (2022) introduced several material changes:
+
+- New requirements for prosumer's electrical installations (combining production and consumption)
+- Updated requirements for electric vehicle charging installations
+- Revised arrangements for surge protective devices
+- Updated requirements for power over Ethernet
+- Changes to inspection and testing requirements
+
+Amendment 3 is under consultation at the time of writing; practitioners should monitor IET publication and CPD requirements.
+
+Supporting IET publications:
+
+- **IET Guidance Note 3** — Inspection and Testing (currently 9th Edition aligned with BS 7671:2018+A2:2022)
+- **IET On-Site Guide** — the practical reference for installers
+- **IET Code of Practice for In-Service Inspection and Testing of Electrical Equipment** — covers PAT (separately to BS 7671)
+
+## 3. Periodic inspection requirements
+
+BS 7671 Chapter 65 covers periodic inspection. The standard does not specify frequencies prescriptively but requires inspection at intervals "determined by the nature of the installation, its use and operation, the frequency and quality of maintenance and the external influences to which it is subjected."
+
+IET Guidance Note 3 provides recommended maximum periods between inspections:
+
+**Domestic installations:**
+
+- Owner-occupied: 10 years or on change of occupancy
+- Rented: 5 years or change of occupancy (statutory for England)
+- HMOs: 5 years (statutory in some local authority licensing schemes)
+
+**Commercial installations:**
+
+- General offices and retail: 5 years
+- Industrial: 3 years
+- Hotels (excluding bedrooms): 5 years; bedrooms 10 years (with increased frequency at occupant change)
+- Restaurants and bars: 5 years
+- Theatres and cinemas: 3 years (5 years for the auditorium itself)
+- Gyms and leisure: 3 years (with shorter intervals for treatment rooms and wet areas)
+- Public buildings: 5 years
+- Educational establishments: 5 years
+- Healthcare premises: 5 years (with shorter intervals for critical care, treatment, theatres)
+- Care homes: 5 years
+
+**Higher-risk installations:**
+
+- Construction sites: 3 months
+- Caravans: 1 year (or change of occupancy)
+- Petrol filling stations: 1 year
+- Swimming pools: 1 year
+- Spa pools: 1 year
+- Marinas: 1 year
+
+These are maximum recommended periods. The actual frequency for a specific installation should reflect:
+
+- Age and condition
+- Use pattern (intensity, hours, demand)
+- Environmental influences (moisture, temperature, mechanical stress, dust)
+- Maintenance regime quality
+- Recent modifications or additions
+- Previous inspection findings
+
+A modern installation in good condition with strong maintenance can justify the maximum interval. An aged installation with limited maintenance history typically warrants shorter intervals.
+
+## 4. EICR methodology
+
+The Electrical Installation Condition Report is the documented output of periodic inspection. IET Guidance Note 3 sets out the methodology in detail.
+
+**Scope determination:**
+
+The EICR should identify the installation under inspection — the building, the relevant distribution boards, the in-scope circuits. Limits of inspection must be declared:
+
+- Areas not accessed
+- Circuits not tested
+- Components not accessible without dismantling
+- Sample size if less than 100%
+
+The default test sample is 20% of circuits unless otherwise specified by the client or determined by the inspector. Test extent should be agreed in advance.
+
+**Inspection:**
+
+The visual inspection covers:
+
+- Distribution boards — type, condition, identification, accessibility
+- Protective devices — type, rating, condition
+- Conductors — type, sizing, insulation condition
+- Connections — accessible terminations, polarity, identification
+- Bonding and earthing arrangements
+- Accessory condition — sockets, switches, fittings
+- Compliance with current BS 7671
+
+**Testing:**
+
+The electrical tests typically include:
+
+- Insulation resistance (between live conductors and earth, between line conductors)
+- Continuity of protective conductors
+- Continuity of ring final circuits
+- Polarity verification
+- Earth fault loop impedance
+- RCD operation testing
+- Volt drop calculation where required
+- Prospective short-circuit and earth fault current verification
+
+The IET Guidance Note 3 provides the operational protocols for each test.
+
+**Limitations:**
+
+Inspections are limited by what can reasonably be accessed and tested. Disconnection for inspection of concealed parts is not normally part of routine periodic inspection. The inspector records what was accessed, what was not, and the implications for the overall assessment.
+
+## 5. Code classification — and the C3 question
+
+Defects identified during inspection are coded under BS 7671 Appendix 6:
+
+**C1 — Danger present**
+
+A current danger exists. The installation is unsafe at the time of inspection. Examples:
+
+- Exposed live conductors
+- Missing protective enclosures on energised equipment
+- Wiring deterioration creating risk of fire or shock
+- Severe earth or bonding failures
+
+The inspector should make the installation safe before leaving site where reasonably possible (isolate the affected circuit, advise immediate disconnection, notify the client).
+
+**C2 — Potentially dangerous**
+
+A fault exists that could become dangerous under reasonably foreseeable conditions. The installation is not safe in the current state but is not currently producing injury or damage. Examples:
+
+- High earth fault loop impedance not meeting BS 7671 disconnection time requirements
+- Significant insulation resistance below acceptable thresholds
+- Missing or defective RCDs where required for protection
+- Damaged equipment that could fail under load
+
+C2 findings require action as soon as practicable.
+
+**C3 — Improvement recommended**
+
+A condition that is not currently dangerous but is below current BS 7671 standard. Examples:
+
+- Older installations not complying with current cable identification requirements
+- Older consumer units that would not meet current selection requirements
+- Sub-optimal cable routing that would not be accepted on new installations
+- Missing or degraded labelling
+
+The C3 categorisation reflects the inspector's professional judgement that the item is worth flagging without crossing the C2 threshold.
+
+**FI — Further investigation required**
+
+The inspector has identified something that needs more detailed examination than the inspection scope allowed. Examples:
+
+- A circuit that did not test as expected and requires destructive investigation
+- Equipment behaving anomalously and warranting specialist examination
+- Suspected concealed damage that would require dismantling
+
+The overall installation is classified Satisfactory or Unsatisfactory. Any C1 or C2 finding produces an Unsatisfactory determination. A report with only C3 findings is technically Satisfactory.
+
+## 6. The C3 handling question
+
+The dominant interpretation in the commercial market is that C3 findings are "not required" and may be ignored. This interpretation is technically correct in terms of the Satisfactory/Unsatisfactory determination but creates a defensibility gap.
+
+The professional position:
+
+- C3 findings are **professional recommendations from a competent person**, made knowing the specific installation
+- The inspector chose to make the observation; the recommendation was deliberate
+- An ignored C3 that becomes relevant to a subsequent incident creates the question: "why was the professional recommendation not followed?"
+- "It was only a C3" is not a strong answer
+
+The practitioner advice to clients:
+
+- Review each C3 finding with someone competent to interpret it
+- Risk-assess the implications for the specific use of the building
+- Make a decision: action, plan, or accept with reasoning
+- Document the decision
+
+Three legitimate handling routes:
+
+**Action.** Resolve the C3 immediately. Strongest position; most appropriate where the cost is modest relative to the consequence of leaving it.
+
+**Plan.** Incorporate the C3 into a future refurbishment, electrical upgrade, or scheduled programme. Appropriate where the C3 will be naturally resolved by planned work and immediate intervention is disproportionate.
+
+**Accept with reasoning.** Sometimes a C3 reflects an older standard that is genuinely not worth retrospective alignment (e.g., cable colour changes that would not affect safety in a competently maintained installation). The decision to accept should be recorded with the specific reasoning.
+
+What is not acceptable:
+
+- Filing the EICR without reviewing C3 findings
+- Generic decisions ("we never action C3s") that do not engage with the specific findings
+- Unrecorded decisions
+
+The C3 question is the area where EICRs most commonly drift between technical satisfaction and risk management failure.
+
+## 7. Remedial works and the certificate trail
+
+C1 and C2 findings require remediation. Remedial works should be:
+
+- Carried out by a competent person (registered electrician with appropriate qualifications)
+- Documented via Electrical Installation Certificate (EIC) for new work, or Minor Electrical Installation Works Certificate (MEIWC) for minor works
+- Recorded against the original EICR finding so the audit trail closes
+
+The remedial certificate, retained alongside the original EICR, completes the documentary chain. A common deficiency is remedial work performed but the certificate either never produced or never retained — leaving the EICR finding apparently unresolved on the documentary record.
+
+For C3 findings, no formal certificate is required when they are addressed because the work may not be remedial in the formal sense — but the work should still be documented in the building's electrical records.
+
+## 8. Thermal imaging
+
+Thermal imaging (infrared thermography) is a diagnostic technique outside BS 7671 inspection scope but with significant value in identifying:
+
+- Loose connections in distribution boards
+- Imbalanced loads across phases
+- Overloaded circuits operating at elevated temperature
+- Failing components before complete failure
+
+Thermal imaging is most valuable for:
+
+- High-load installations (industrial, large commercial, hospitality)
+- Premises where failure has high consequence (hotels, public venues, healthcare)
+- Aged installations where component degradation is likely
+- Installations approaching the periodic inspection but where supplementary diagnostic is warranted
+
+Best practice integrates thermal imaging as a complement to the EICR, not a substitute. The two techniques look for different problem types:
+
+- The EICR identifies non-compliance with current BS 7671 and visible defects
+- Thermal imaging identifies developing thermal anomalies that may not be visible
+
+Thermal surveys should be carried out by competent thermographers, typically with Level I or Level II thermography certification (ITC, BINDT, or equivalent). The output is a thermal report identifying hotspots, their location, and the recommended remedial action.
+
+## 9. Frequencies in higher-risk environments
+
+For specific premises types, additional considerations apply:
+
+**Spa pools and swimming pools (1-3 year intervals):**
+
+Wet environments, increased shock risk, RCD reliance for safety. Practitioner consensus is short intervals (1-3 years). Bonding integrity is critical and warrants specific attention.
+
+**Healthcare premises:**
+
+Critical care environments (operating theatres, intensive care, dialysis) have specific BS 7671 requirements (Section 710). IPS (Isolated Power Supply) systems require specific testing protocols. Intervals shorter than general guidance.
+
+**Industrial premises with high load:**
+
+Three-yearly intervals are the IET Guidance Note 3 maximum. For premises with continuous heavy load, vibration, thermal cycling, or aged installations, shorter intervals are typically appropriate.
+
+**Construction sites (3-month intervals):**
+
+Construction is the highest-frequency regime, reflecting mobile equipment, harsh environments, and frequent layout changes. Inspection at three-monthly intervals is the IET Guidance Note 3 baseline; some larger sites operate monthly inspection.
+
+**Petrol filling stations and hazardous areas:**
+
+Subject to additional regulation under DSEAR (Dangerous Substances and Explosive Atmospheres Regulations 2002) and the Petroleum (Consolidation) Regulations 2014. ATEX-classified zones require specific competence and protocols.
+
+## 10. Competence framework
+
+Periodic inspection and testing should be carried out by competent persons. The recognised competence framework:
+
+- **City & Guilds 2391** (Inspection and Testing of Electrical Installations) — the principal qualification for inspectors
+- **NICEIC, NAPIT, ELECSA, STROMA, BESCA** — competent person scheme membership
+- **18th Edition Amendment 2 certification** — currency with current edition of BS 7671
+- **Specific environment competence** — for healthcare (HTM 06-01), petrol forecourts (BS 7671 Section 7XX), explosive atmospheres (CompEx)
+
+For client commissioning, verification of competence should include:
+
+- Scheme membership (verifiable via the scheme registry)
+- Current 18th Edition certification
+- PI insurance appropriate to the installation
+- Sector experience for specialist environments
+
+## 11. The management regime around the certificate
+
+The EICR is one document. The wider electrical management regime — what gives the certificate operational meaning — includes:
+
+**Ongoing checks between EICRs:**
+
+- User-level visual awareness (staff trained to spot damage, signs of overheating)
+- Maintenance walk-throughs of distribution boards
+- Annual visual inspection by a competent electrician (without full retest)
+- Reactive response to reported concerns
+
+**Modification control:**
+
+- Any electrical work between EICRs must be documented (EIC or MEIWC)
+- Modifications affect the relevance of the previous EICR
+- Significant modifications warrant a fresh EICR rather than waiting for the periodic interval
+
+**Equipment management:**
+
+- PAT regime for portable equipment (separate to EICR — covered at [/pat-testing/professional](/pat-testing/professional))
+- Maintenance of accessible equipment
+- End-of-life management for ageing distribution boards, transformers, and major plant
+
+**Records:**
+
+- Current EICR, all previous editions retained
+- Remedial certificates linked to EICR findings
+- Modification certificates (EIC, MEIWC) chronologically retained
+- Thermal imaging reports
+- Equipment maintenance records
+- A named responsible person who can answer questions
+
+## 12. Enforcement and case law
+
+HSE enforcement under EAWR is less visible than for high-profile hazards (asbestos, fire) but is active. Themes:
+
+**Failed maintenance.** Premises where the EICR identified C1 or C2 findings that were not actioned, followed by an incident. The unresolved finding becomes the basis of prosecution.
+
+**Inadequate competence.** Work performed by uncertified persons in commercial environments, particularly where injury or fire results.
+
+**Modification without recertification.** Significant modifications carried out without corresponding certification, leaving the installation outside the certified scope.
+
+**Public access environments.** Higher scrutiny for premises with public access (retail, hospitality, entertainment) where electrical failure can affect non-employees.
+
+**Residential rented properties.** Since the 2020 regulations introduced statutory EICRs for English residential rentals, enforcement focus has increased on landlords without current EICRs.
+
+Sentencing under the Sentencing Council Guidelines for Health and Safety Offences applies. Recent corporate fines have reached six and seven figures for serious failures resulting in fatality or serious injury.
+
+This pillar should be read alongside the layman version at [/electrical-testing](/electrical-testing) and the related professional pillar on [PAT testing](/pat-testing/professional).
